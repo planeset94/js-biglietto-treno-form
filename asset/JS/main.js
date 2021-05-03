@@ -1,7 +1,5 @@
 // CHIEDO IL NOME DELL'UTENTE, I KILOMETRI CHE DEVE PERCORRERE E LA FASCIA D'ETà
-// var userName = prompt('Write your Name and Surname, please');
-// var distance = Number(prompt('How far is your destination? Please indicate the number of kilometers'));
-// var userAge = prompt('How old are you?');
+
 
 // UTILIZZO LE INFO DELL'UTENTE SOSTITUENDOLE AI VARI INPUT.
 
@@ -9,70 +7,64 @@ var userNameEl = document.getElementById('fname');
 var userName = userNameEl.value;
 
 var distanceEl = document.getElementById('km');
-var distance = distanceEl.value;
 
 
 
 var ageEl = document.getElementById('age');
-var userAge = ageEl.value;
+
+var ticketPriceEl = document.getElementById('ticket_price');
 
 
-var prezzoEl = document.getElementById('prezzo');
-var prezzoBiglietto = prezzoEl.value;
 
-var copyNameEl = document.getElementById('copyName');
-var copyName = copyNameEl.value;
+
+var copyNameEl = document.getElementById('copy_name');
+var codexEl = document.getElementById('codex');
 
 
 var buttonEl_1 = document.getElementById('crea');
 var buttonEl_2 = document.getElementById('annulla');
 
-// function calcPrice() {
-//     var prezzo;
-//     if (userAge === "Minorenne") {
-//         prezzo = 0.21 * distance * 0.8;
-//     } else if (userAge === "Over65") {
-//         prezzo = 0.21 * distance * 0.6;
-//     } else {
-//         prezzo = 0.21 * distance;
-//     }
-
-//     return prezzo;
-// }
-
+function random_Function(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+}
 
 
 
 buttonEl_1.addEventListener('click', function () {
+    codexEl.innerHTML = random_Function(9000, 1000);
+    copyNameEl.innerHTML = userNameEl.value;
 
-    var prezzo;
-    if (userAge === "Minorenne") {
-        prezzo = 0.21 * distance * 0.8;
-    } else if (userAge === "Over65") {
-        prezzo = 0.21 * distance * 0.6;
+
+    if (ageEl.value == "minorenne") {
+
+        ticketPriceEl.innerHTML = (0.21 * distanceEl.value * 0.8).toPrecision(3) + "€";
+    } else if (ageEl.value == "over65") {
+        ticketPriceEl.innerHTML = (0.21 * distanceEl.value * 0.6).toPrecision(3) + "€";
     } else {
-        prezzo = 0.21 * distance;
+        ticketPriceEl.innerHTML = (0.21 * distanceEl.value).toPrecision(3) + "€";
     }
 
-    return prezzo;
-    copyName = userName;
-    prezzoEl.innerHTML = prezzo;
+
+
+
+
+
 });
-
-
-
-
-
 
 buttonEl_2.addEventListener('click', function () {
     var conferma = confirm('Are you sure to reset data?');
     if (conferma) {
         userName = "";
-        userAge = "";
         distance = "";
     }
 
 });
+
+
+
+
+
+
 
 
 

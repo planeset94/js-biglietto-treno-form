@@ -22,63 +22,79 @@
 
                     <div class="name">
                         <label for="fname">Nome Cognome</label>
-                        <input type="text" id="fname" name="fname" value="segnaposto">
+                        <input type="text" id="fname" name="fname">
 
                     </div>
                     <div class="distance">
                         <label for="km">Km da percorrere</label>
-                        <input type="text" id="km" name="km" value="x">
+                        <input type="text" id="km" name="km">
                     </div>
 
                     <div class="age">
                         <label for="age">Fascia d'età</label>
                         <select id="age">
                             <option value="minorenne">Minorenne</option>
+                            <option value="adulto">Adulto</option>
                             <option value="over65">Over 65</option>
                         </select>
-
-
                     </div>
-
                 </div>
-
                 <div class="btn">
                     <button id="crea">Genera</button>
                     <button id="annulla">Annulla</button>
-
-
                 </div>
-
             </form>
-
-
-
-
-
-
-
-
-
-
-
         </div>
         <h3 class="h3 text-uppercase">il tuo biglietto</h3>
         <div class="train info">
 
+            <h5 class="text-uppercase"> dettaglio passeggeri</h5>
+            <div class="row">
+                <div class="col-4 recap text-uppercase">
+                    <label for="copyName" class="h5 _color-black">nome passeggero</label>
+                    <p id="copyName" class="h5"></p>
+                </div>
+
+                <div class="col-8 train d-flex justify-content-between">
+
+                    <div class="offerta  d-flex flex-column justify-content-between">
+                        <p class="font-weight-bold h5">Offerta</p>
+                        <p id="offerType">segnaposto</p>
+                    </div>
+                    <div class="carrozza d-flex flex-column justify-content-between">
+                        <p class="font-weight-bold h5">Carrozza</p>
+                        <p id="coachNumber">segnaposto</p>
+                    </div>
+                    <div class="codice d-flex flex-column justify-content-between">
+                        <p class="font-weight-bold h5">Codice CP</p>
+                        <p id="codex">segnaposto</p>
+                    </div>
+                    <div class="prezzo d-flex flex-column justify-content-between">
+                        <p class="font-weight-bold h5">Costo biglietto</p>
+                        <p id="ticketPrice"> segnaposto</p>
+
+                    </div>
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+
+
+
+
 
 
 
         </div>
-
-
-
-
-
-
-
-
-
     </div>
+
 
 
 

@@ -13,30 +13,42 @@
 
 <body>
 
-    <div class="container d-flex flex-column align-items-center">
-        <h1 class="h2 text-uppercase mt-3">calcola il prezzo del tuo biglietto</h1>
+    <div class="_mycontainer d-flex flex-column align-items-center">
+        <h3 class="h3 text-uppercase mt-3">calcola il prezzo del tuo biglietto</h3>
         <div class="personal info ">
 
-            <form class="" action="#">
-                <div class="labels">
-                    <label for="fname">Nome Cognome</label>
-                    <label for="km">Last name:</label>
-                    <label for="age">Fascia d'età</label>
+            <form class="d-flex flex-column justify-content-between" action="#">
+                <div class="d-flex justify-content-between">
+
+                    <div class="name">
+                        <label for="fname">Nome Cognome</label>
+                        <input type="text" id="fname" name="fname" value="segnaposto">
+
+                    </div>
+                    <div class="distance">
+                        <label for="km">Km da percorrere</label>
+                        <input type="text" id="km" name="km" value="x">
+                    </div>
+
+                    <div class="age">
+                        <label for="age">Fascia d'età</label>
+                        <select id="age">
+                            <option value="minorenne">Minorenne</option>
+                            <option value="over65">Over 65</option>
+                        </select>
+
+
+                    </div>
+
                 </div>
 
-                <input type="text" id="fname" name="fname" value="segnaposto">
-                <input type="text" id="km" name="km" value="x">
+                <div class="btn">
+                    <button id="crea">Genera</button>
+                    <button id="annulla">Annulla</button>
 
 
-                <select id="age">
-                    <option value="minorenne">minorenne</option>
-                    <option value="over65">over65</option>
-                </select>
+                </div>
 
-
-
-
-                <input type="submit" value="Submit">
             </form>
 
 
@@ -50,7 +62,7 @@
 
 
         </div>
-        <h1 class="h2 text-uppercase">il tuo biglietto</h1>
+        <h3 class="h3 text-uppercase">il tuo biglietto</h3>
         <div class="train info">
 
 
@@ -71,5 +83,6 @@
 
 
 </body>
+<script src="./asset/JS/main.js"></script>
 
 </html>

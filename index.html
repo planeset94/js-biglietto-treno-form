@@ -17,7 +17,7 @@
         <h3 class="h3 text-uppercase mt-3">calcola il prezzo del tuo biglietto</h3>
         <div class="personal info ">
 
-            <form class="d-flex flex-column justify-content-between" action="#">
+            <div class=" form d-flex flex-column justify-content-between" action="#">
                 <div class="d-flex justify-content-between">
 
                     <div class="name">
@@ -43,19 +43,21 @@
                     <button id="crea">Genera</button>
                     <button id="annulla">Annulla</button>
                 </div>
-            </form>
+            </div>
         </div>
         <h3 class="h3 text-uppercase">il tuo biglietto</h3>
         <div class="train info">
 
             <h5 class="text-uppercase"> dettaglio passeggeri</h5>
             <div class="row">
-                <div class="col-4 recap text-uppercase">
-                    <label for="copyName" class="h5 _color-black">nome passeggero</label>
-                    <p id="copyName" class="h5"></p>
+                <div class="col-3 recap text-uppercase">
+                    <label for="copy_name" class="h5 _color-black">
+                        <p class="h5 font-weight-bolder pt-4">nome passeggero</p>
+                    </label>
+                    <p id="copy_name" class="h5">segnaposto</p>
                 </div>
 
-                <div class="col-8 train d-flex justify-content-between">
+                <div class="col-9 train d-flex justify-content-between">
 
                     <div class="offerta  d-flex flex-column justify-content-between">
                         <p class="font-weight-bold h5">Offerta</p>
@@ -71,7 +73,7 @@
                     </div>
                     <div class="prezzo d-flex flex-column justify-content-between">
                         <p class="font-weight-bold h5">Costo biglietto</p>
-                        <p id="ticketPrice"> segnaposto</p>
+                        <p id="ticket_price"> segnaposto</p>
 
                     </div>
 

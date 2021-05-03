@@ -28,7 +28,7 @@ div.personal.info{
     border-radius: 1rem;
 }
 
-form{
+.form{
     padding:1rem 3rem;
     height: 100%;
     width: 70%;
@@ -78,6 +78,8 @@ button{
 }
 .row{
     margin:0;
+    height: 12rem;
+  
     
 }
 
@@ -86,14 +88,20 @@ button{
 }
 
 .recap{
-  background-color: #808080;  
+  background-color: #808080; 
+  height: 100%;
+ 
 }
-.train{
+.row .train{
     border:1px solid black;
+    height: 100%;
+    padding: 2rem 0;
+    
+   
 }
 
 div.offerta{
-    margin-right: 6rem;
+    margin: 0 6rem 0 1rem;
 }
 .codice>p, .prezzo>p{
     width: 50%;

@@ -7,7 +7,7 @@ body{
 }
 
 ._mycontainer{
-    width: 80%;
+    width: 60%;
     margin: auto;
 }
 
@@ -74,8 +74,16 @@ button{
     font-weight: bold;
     border:1px solid black;
     border-radius: 5px;
-
 }
+
+.train.info{
+    display: none;
+}
+
+
+
+
+
 .row{
     margin:0;
     height: 12rem;

@@ -22,12 +22,12 @@
 
                     <div class="name">
                         <label for="fname">Nome Cognome</label>
-                        <input type="text" id="fname" name="fname">
+                        <input type="text" id="fname" name="fname" required>
 
                     </div>
                     <div class="distance">
                         <label for="km">Km da percorrere</label>
-                        <input type="text" id="km" name="km">
+                        <input type="text" id="km" name="km" step="0.01" required>
                     </div>
 
                     <div class="age">
@@ -40,13 +40,13 @@
                     </div>
                 </div>
                 <div class="btn">
-                    <button id="crea">Genera</button>
+                    <button id="crea" onclick="displayTicket()">Genera</button>
                     <button id="annulla">Annulla</button>
                 </div>
             </div>
         </div>
         <h3 class="h3 text-uppercase">il tuo biglietto</h3>
-        <div class="train info">
+        <div id="train_info" class="train info">
 
             <h5 class="text-uppercase"> dettaglio passeggeri</h5>
             <div class="row">
